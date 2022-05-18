@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "namespace": "com.avro.student",
+  "name": "Students",
+  "version": "1",
+  "fields": [
+    { "name": "studentId", "type": "string", "doc": "Student ID" },
+    { "name": "fullName", "type": "string", "doc": "Full name" },
+    { "name": "courseId", "type": "string", "doc": "Course ID" }
+  ]
+}

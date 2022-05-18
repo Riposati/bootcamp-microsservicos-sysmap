@@ -1,0 +1,19 @@
+kafka:
+  bootstrapServers: 127.0.0.1:9092
+  acksConfig: all
+  retriesConfig: 10
+  schemaRegistryUrl: "http://127.0.0.1:8084"
+  producer:
+    value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    group-id: ms-learning-student
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+jackson:
+  time-zone: America/Sao_Paulo
+#data:
+#  mongodb:
+#    host: localhost
+#    port: '27017'
+#    database: student
+
+server:
+  port: '8082'
